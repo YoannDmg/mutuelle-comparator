@@ -92,7 +92,6 @@ proxy: {
 ### Détail assureur
 - Affiche les formules d'un assureur
 - Visualisation des garanties par catégorie
-- Ajout/retrait de la comparaison
 
 ### Comparaison
 - Tableau comparatif côte à côte
