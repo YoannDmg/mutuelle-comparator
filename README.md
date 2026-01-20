@@ -123,7 +123,7 @@ insurance-comparator/
 |----------|----------|
 | **NestJS 11 + React 19** | Séparation claire backend/frontend |
 | **Tailwind 4 + Base UI** | Styling flexible, composants accessibles |
-| **MongoDB** | Schéma souple pour prototyper vite (voir limites en "Améliorations futures") |
+| **MongoDB** | Stocke du JSON nativement → seed direct depuis les fichiers du parseur |
 | **Claude Sonnet 4** | Capable de comprendre des tableaux de garanties complexes |
 | **Python + pdfplumber** | Librairies PDF matures, script séparé de l'app |
 | **Docker Compose + Makefile** | Démarrage simple (`make start`), commandes unifiées pour dev et prod |
