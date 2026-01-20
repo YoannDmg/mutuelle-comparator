@@ -1,0 +1,543 @@
+{
+  "name": "APRIL",
+  "brand": "Flexi Santé",
+  "plans": [
+    {
+      "level": 1,
+      "name": "Niveau 1",
+      "guarantees": [
+        {
+          "category": "hospitalization",
+          "key": "hospital_stay",
+          "label": "Frais de séjour",
+          "reimbursement": { "type": "real_costs" }
+        },
+        {
+          "category": "hospitalization",
+          "key": "daily_hospital_fee",
+          "label": "Forfait journalier hospitalier",
+          "reimbursement": { "type": "real_costs" }
+        },
+        {
+          "category": "hospitalization",
+          "key": "surgical_fees",
+          "label": "Médecins DPTAM",
+          "reimbursement": { "type": "percentage", "value": 100 }
+        },
+        {
+          "category": "general_care",
+          "key": "general_practitioner",
+          "label": "Médecins DPTAM",
+          "reimbursement": { "type": "percentage", "value": 100 }
+        },
+        {
+          "category": "general_care",
+          "key": "lab_tests",
+          "label": "Honoraires paramédicaux, analyses et examens de laboratoire",
+          "reimbursement": { "type": "percentage", "value": 100 }
+        },
+        {
+          "category": "general_care",
+          "key": "medication",
+          "label": "Médicaments remboursés par la Sécurité sociale",
+          "reimbursement": { "type": "percentage", "value": 100 }
+        },
+        {
+          "category": "dental",
+          "key": "dental_care",
+          "label": "Soins dentaires, Inlays-Onlays remboursés par la Sécurité sociale",
+          "reimbursement": { "type": "percentage", "value": 100 }
+        },
+        {
+          "category": "dental",
+          "key": "dental_prosthetics",
+          "label": "Prothèses \"Offre Modérée\" et \"Offre Libre\" remboursées par la Sécurité sociale",
+          "reimbursement": { "type": "percentage", "value": 100 }
+        },
+        {
+          "category": "dental",
+          "key": "orthodontics",
+          "label": "Orthodontie remboursée par la Sécurité sociale",
+          "reimbursement": { "type": "percentage", "value": 100 }
+        },
+        {
+          "category": "optical",
+          "key": "simple_lenses",
+          "label": "Équipement \"Offre libre\" Classe B : 1 monture + 2 verres simples",
+          "reimbursement": { "type": "fixed", "value": 100, "unit": "EUR" }
+        },
+        {
+          "category": "optical",
+          "key": "complex_lenses",
+          "label": "Équipement \"Offre libre\" Classe B : 1 monture + 2 verres complexes",
+          "reimbursement": { "type": "fixed", "value": 200, "unit": "EUR" }
+        },
+        {
+          "category": "optical",
+          "key": "contact_lenses",
+          "label": "Lentilles remboursées par la Sécurité sociale",
+          "reimbursement": { "type": "percentage", "value": 100 }
+        },
+        {
+          "category": "hearing_aids",
+          "key": "hearing_aids",
+          "label": "Équipements \"Offre libre\" Classe II",
+          "reimbursement": { "type": "percentage", "value": 100 }
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "name": "Niveau 2",
+      "guarantees": [
+        {
+          "category": "hospitalization",
+          "key": "hospital_stay",
+          "label": "Frais de séjour",
+          "reimbursement": { "type": "real_costs" }
+        },
+        {
+          "category": "hospitalization",
+          "key": "daily_hospital_fee",
+          "label": "Forfait journalier hospitalier",
+          "reimbursement": { "type": "real_costs" }
+        },
+        {
+          "category": "hospitalization",
+          "key": "surgical_fees",
+          "label": "Médecins DPTAM",
+          "reimbursement": { "type": "percentage", "value": 125 }
+        },
+        {
+          "category": "hospitalization",
+          "key": "private_room",
+          "label": "Chambre particulière",
+          "reimbursement": { "type": "fixed", "value": 30, "unit": "EUR/day" }
+        },
+        {
+          "category": "general_care",
+          "key": "general_practitioner",
+          "label": "Médecins DPTAM",
+          "reimbursement": { "type": "percentage", "value": 100 }
+        },
+        {
+          "category": "general_care",
+          "key": "lab_tests",
+          "label": "Honoraires paramédicaux, analyses et examens de laboratoire",
+          "reimbursement": { "type": "percentage", "value": 100 }
+        },
+        {
+          "category": "general_care",
+          "key": "medication",
+          "label": "Médicaments remboursés par la Sécurité sociale",
+          "reimbursement": { "type": "percentage", "value": 100 }
+        },
+        {
+          "category": "dental",
+          "key": "dental_care",
+          "label": "Soins dentaires, Inlays-Onlays remboursés par la Sécurité sociale",
+          "reimbursement": { "type": "percentage", "value": 125 }
+        },
+        {
+          "category": "dental",
+          "key": "dental_prosthetics",
+          "label": "Prothèses \"Offre Modérée\" et \"Offre Libre\" remboursées par la Sécurité sociale",
+          "reimbursement": { "type": "percentage", "value": 125 }
+        },
+        {
+          "category": "dental",
+          "key": "orthodontics",
+          "label": "Orthodontie remboursée par la Sécurité sociale",
+          "reimbursement": { "type": "percentage", "value": 100 }
+        },
+        {
+          "category": "optical",
+          "key": "simple_lenses",
+          "label": "Équipement \"Offre libre\" Classe B : 1 monture + 2 verres simples",
+          "reimbursement": { "type": "fixed", "value": 150, "unit": "EUR" }
+        },
+        {
+          "category": "optical",
+          "key": "complex_lenses",
+          "label": "Équipement \"Offre libre\" Classe B : 1 monture + 2 verres complexes",
+          "reimbursement": { "type": "fixed", "value": 200, "unit": "EUR" }
+        },
+        {
+          "category": "optical",
+          "key": "contact_lenses",
+          "label": "Lentilles remboursées par la Sécurité sociale",
+          "reimbursement": { "type": "percentage", "value": 100 }
+        },
+        {
+          "category": "hearing_aids",
+          "key": "hearing_aids",
+          "label": "Équipements \"Offre libre\" Classe II",
+          "reimbursement": { "type": "percentage", "value": 100 }
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "name": "Niveau 3",
+      "guarantees": [
+        {
+          "category": "hospitalization",
+          "key": "hospital_stay",
+          "label": "Frais de séjour",
+          "reimbursement": { "type": "real_costs" }
+        },
+        {
+          "category": "hospitalization",
+          "key": "daily_hospital_fee",
+          "label": "Forfait journalier hospitalier",
+          "reimbursement": { "type": "real_costs" }
+        },
+        {
+          "category": "hospitalization",
+          "key": "surgical_fees",
+          "label": "Médecins DPTAM",
+          "reimbursement": { "type": "percentage", "value": 150 }
+        },
+        {
+          "category": "hospitalization",
+          "key": "private_room",
+          "label": "Chambre particulière",
+          "reimbursement": { "type": "fixed", "value": 45, "unit": "EUR/day" }
+        },
+        {
+          "category": "general_care",
+          "key": "general_practitioner",
+          "label": "Médecins DPTAM",
+          "reimbursement": { "type": "percentage", "value": 125 }
+        },
+        {
+          "category": "general_care",
+          "key": "lab_tests",
+          "label": "Honoraires paramédicaux, analyses et examens de laboratoire",
+          "reimbursement": { "type": "percentage", "value": 125 }
+        },
+        {
+          "category": "general_care",
+          "key": "medication",
+          "label": "Médicaments remboursés par la Sécurité sociale",
+          "reimbursement": { "type": "percentage", "value": 100 }
+        },
+        {
+          "category": "dental",
+          "key": "dental_care",
+          "label": "Soins dentaires, Inlays-Onlays remboursés par la Sécurité sociale",
+          "reimbursement": { "type": "percentage", "value": 150 }
+        },
+        {
+          "category": "dental",
+          "key": "dental_prosthetics",
+          "label": "Prothèses \"Offre Modérée\" et \"Offre Libre\" remboursées par la Sécurité sociale",
+          "reimbursement": { "type": "percentage", "value": 150 }
+        },
+        {
+          "category": "dental",
+          "key": "orthodontics",
+          "label": "Orthodontie remboursée par la Sécurité sociale",
+          "reimbursement": { "type": "percentage", "value": 100 }
+        },
+        {
+          "category": "optical",
+          "key": "simple_lenses",
+          "label": "Équipement \"Offre libre\" Classe B : 1 monture + 2 verres simples",
+          "reimbursement": { "type": "fixed", "value": 200, "unit": "EUR" }
+        },
+        {
+          "category": "optical",
+          "key": "complex_lenses",
+          "label": "Équipement \"Offre libre\" Classe B : 1 monture + 2 verres complexes",
+          "reimbursement": { "type": "fixed", "value": 250, "unit": "EUR" }
+        },
+        {
+          "category": "optical",
+          "key": "contact_lenses",
+          "label": "Lentilles remboursées par la Sécurité sociale",
+          "reimbursement": { "type": "percentage", "value": 100 }
+        },
+        {
+          "category": "hearing_aids",
+          "key": "hearing_aids",
+          "label": "Équipements \"Offre libre\" Classe II",
+          "reimbursement": { "type": "percentage", "value": 100 }
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "name": "Niveau 4",
+      "guarantees": [
+        {
+          "category": "hospitalization",
+          "key": "hospital_stay",
+          "label": "Frais de séjour",
+          "reimbursement": { "type": "real_costs" }
+        },
+        {
+          "category": "hospitalization",
+          "key": "daily_hospital_fee",
+          "label": "Forfait journalier hospitalier",
+          "reimbursement": { "type": "real_costs" }
+        },
+        {
+          "category": "hospitalization",
+          "key": "surgical_fees",
+          "label": "Médecins DPTAM",
+          "reimbursement": { "type": "percentage", "value": 200 }
+        },
+        {
+          "category": "hospitalization",
+          "key": "private_room",
+          "label": "Chambre particulière",
+          "reimbursement": { "type": "fixed", "value": 60, "unit": "EUR/day" }
+        },
+        {
+          "category": "general_care",
+          "key": "general_practitioner",
+          "label": "Médecins DPTAM",
+          "reimbursement": { "type": "percentage", "value": 150 }
+        },
+        {
+          "category": "general_care",
+          "key": "lab_tests",
+          "label": "Honoraires paramédicaux, analyses et examens de laboratoire",
+          "reimbursement": { "type": "percentage", "value": 150 }
+        },
+        {
+          "category": "general_care",
+          "key": "medication",
+          "label": "Médicaments remboursés par la Sécurité sociale",
+          "reimbursement": { "type": "percentage", "value": 100 }
+        },
+        {
+          "category": "dental",
+          "key": "dental_care",
+          "label": "Soins dentaires, Inlays-Onlays remboursés par la Sécurité sociale",
+          "reimbursement": { "type": "percentage", "value": 200 }
+        },
+        {
+          "category": "dental",
+          "key": "dental_prosthetics",
+          "label": "Prothèses \"Offre Modérée\" et \"Offre Libre\" remboursées par la Sécurité sociale",
+          "reimbursement": { "type": "percentage", "value": 200 },
+          "limit": "1 500 €/an"
+        },
+        {
+          "category": "dental",
+          "key": "orthodontics",
+          "label": "Orthodontie remboursée par la Sécurité sociale",
+          "reimbursement": { "type": "percentage", "value": 100 }
+        },
+        {
+          "category": "optical",
+          "key": "simple_lenses",
+          "label": "Équipement \"Offre libre\" Classe B : 1 monture + 2 verres simples",
+          "reimbursement": { "type": "fixed", "value": 250, "unit": "EUR" }
+        },
+        {
+          "category": "optical",
+          "key": "complex_lenses",
+          "label": "Équipement \"Offre libre\" Classe B : 1 monture + 2 verres complexes",
+          "reimbursement": { "type": "fixed", "value": 300, "unit": "EUR" }
+        },
+        {
+          "category": "optical",
+          "key": "contact_lenses",
+          "label": "Lentilles remboursées par la Sécurité sociale",
+          "reimbursement": { "type": "percentage", "value": 100 }
+        },
+        {
+          "category": "hearing_aids",
+          "key": "hearing_aids",
+          "label": "Équipements \"Offre libre\" Classe II",
+          "reimbursement": { "type": "percentage", "value": 100 }
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "name": "Niveau 5",
+      "guarantees": [
+        {
+          "category": "hospitalization",
+          "key": "hospital_stay",
+          "label": "Frais de séjour",
+          "reimbursement": { "type": "real_costs" }
+        },
+        {
+          "category": "hospitalization",
+          "key": "daily_hospital_fee",
+          "label": "Forfait journalier hospitalier",
+          "reimbursement": { "type": "real_costs" }
+        },
+        {
+          "category": "hospitalization",
+          "key": "surgical_fees",
+          "label": "Médecins DPTAM",
+          "reimbursement": { "type": "percentage", "value": 250 }
+        },
+        {
+          "category": "hospitalization",
+          "key": "private_room",
+          "label": "Chambre particulière",
+          "reimbursement": { "type": "fixed", "value": 70, "unit": "EUR/day" }
+        },
+        {
+          "category": "general_care",
+          "key": "general_practitioner",
+          "label": "Médecins DPTAM",
+          "reimbursement": { "type": "percentage", "value": 200 }
+        },
+        {
+          "category": "general_care",
+          "key": "lab_tests",
+          "label": "Honoraires paramédicaux, analyses et examens de laboratoire",
+          "reimbursement": { "type": "percentage", "value": 200 }
+        },
+        {
+          "category": "general_care",
+          "key": "medication",
+          "label": "Médicaments remboursés par la Sécurité sociale",
+          "reimbursement": { "type": "percentage", "value": 100 }
+        },
+        {
+          "category": "dental",
+          "key": "dental_care",
+          "label": "Soins dentaires, Inlays-Onlays remboursés par la Sécurité sociale",
+          "reimbursement": { "type": "percentage", "value": 250 }
+        },
+        {
+          "category": "dental",
+          "key": "dental_prosthetics",
+          "label": "Prothèses \"Offre Modérée\" et \"Offre Libre\" remboursées par la Sécurité sociale",
+          "reimbursement": { "type": "percentage", "value": 250 },
+          "limit": "1 800 €/an"
+        },
+        {
+          "category": "dental",
+          "key": "orthodontics",
+          "label": "Orthodontie remboursée par la Sécurité sociale",
+          "reimbursement": { "type": "percentage", "value": 100 }
+        },
+        {
+          "category": "optical",
+          "key": "simple_lenses",
+          "label": "Équipement \"Offre libre\" Classe B : 1 monture + 2 verres simples",
+          "reimbursement": { "type": "fixed", "value": 300, "unit": "EUR" }
+        },
+        {
+          "category": "optical",
+          "key": "complex_lenses",
+          "label": "Équipement \"Offre libre\" Classe B : 1 monture + 2 verres complexes",
+          "reimbursement": { "type": "fixed", "value": 350, "unit": "EUR" }
+        },
+        {
+          "category": "optical",
+          "key": "contact_lenses",
+          "label": "Lentilles remboursées par la Sécurité sociale",
+          "reimbursement": { "type": "percentage", "value": 100 }
+        },
+        {
+          "category": "hearing_aids",
+          "key": "hearing_aids",
+          "label": "Équipements \"Offre libre\" Classe II",
+          "reimbursement": { "type": "percentage", "value": 100 }
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "name": "Niveau 6",
+      "guarantees": [
+        {
+          "category": "hospitalization",
+          "key": "hospital_stay",
+          "label": "Frais de séjour",
+          "reimbursement": { "type": "real_costs" }
+        },
+        {
+          "category": "hospitalization",
+          "key": "daily_hospital_fee",
+          "label": "Forfait journalier hospitalier",
+          "reimbursement": { "type": "real_costs" }
+        },
+        {
+          "category": "hospitalization",
+          "key": "surgical_fees",
+          "label": "Médecins DPTAM",
+          "reimbursement": { "type": "percentage", "value": 300 }
+        },
+        {
+          "category": "hospitalization",
+          "key": "private_room",
+          "label": "Chambre particulière",
+          "reimbursement": { "type": "fixed", "value": 80, "unit": "EUR/day" }
+        },
+        {
+          "category": "general_care",
+          "key": "general_practitioner",
+          "label": "Médecins DPTAM",
+          "reimbursement": { "type": "percentage", "value": 250 }
+        },
+        {
+          "category": "general_care",
+          "key": "lab_tests",
+          "label": "Honoraires paramédicaux, analyses et examens de laboratoire",
+          "reimbursement": { "type": "percentage", "value": 250 }
+        },
+        {
+          "category": "general_care",
+          "key": "medication",
+          "label": "Médicaments remboursés par la Sécurité sociale",
+          "reimbursement": { "type": "percentage", "value": 100 }
+        },
+        {
+          "category": "dental",
+          "key": "dental_care",
+          "label": "Soins dentaires, Inlays-Onlays remboursés par la Sécurité sociale",
+          "reimbursement": { "type": "percentage", "value": 300 }
+        },
+        {
+          "category": "dental",
+          "key": "dental_prosthetics",
+          "label": "Prothèses \"Offre Modérée\" et \"Offre Libre\" remboursées par la Sécurité sociale",
+          "reimbursement": { "type": "percentage", "value": 300 },
+          "limit": "2 000 €/an"
+        },
+        {
+          "category": "dental",
+          "key": "orthodontics",
+          "label": "Orthodontie remboursée par la Sécurité sociale",
+          "reimbursement": { "type": "percentage", "value": 100 }
+        },
+        {
+          "category": "optical",
+          "key": "simple_lenses",
+          "label": "Équipement \"Offre libre\" Classe B : 1 monture + 2 verres simples",
+          "reimbursement": { "type": "fixed", "value": 300, "unit": "EUR" }
+        },
+        {
+          "category": "optical",
+          "key": "complex_lenses",
+          "label": "Équipement \"Offre libre\" Classe B : 1 monture + 2 verres complexes",
+          "reimbursement": { "type": "fixed", "value": 350, "unit": "EUR" }
+        },
+        {
+          "category": "optical",
+          "key": "contact_lenses",
+          "label": "Lentilles remboursées par la Sécurité sociale",
+          "reimbursement": { "type": "percentage", "value": 100 }
+        },
+        {
+          "category": "hearing_aids",
+          "key": "hearing_aids",
+          "label": "Équipements \"Offre libre\" Classe II",
+          "reimbursement": { "type": "percentage", "value": 100 }
+        }
+      ]
+    }
+  ]
+}

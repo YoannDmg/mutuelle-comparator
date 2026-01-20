@@ -1,29 +1,66 @@
-// === REIMBURSEMENT TYPES ===
+// === CATEGORIES ===
+
+export const CATEGORIES = [
+  'hospitalization',
+  'general_care',
+  'optical',
+  'dental',
+  'hearing_aids',
+] as const;
+
+export type Category = (typeof CATEGORIES)[number];
+
+export const CATEGORY_LABELS: Record<Category, string> = {
+  hospitalization: 'Hospitalisation',
+  general_care: 'Soins courants',
+  optical: 'Optique',
+  dental: 'Dentaire',
+  hearing_aids: 'Audiologie',
+};
+
+// === NORMALIZED KEYS ===
+
+export const NORMALIZED_KEYS = {
+  // Hospitalization
+  hospital_stay: 'Frais de séjour',
+  daily_hospital_fee: 'Forfait journalier',
+  private_room: 'Chambre particulière',
+  surgical_fees: 'Honoraires chirurgicaux',
+  // General care
+  general_practitioner: 'Médecin généraliste',
+  specialist: 'Spécialiste',
+  lab_tests: 'Analyses',
+  medication: 'Médicaments',
+  // Optical
+  simple_lenses: 'Verres simples + monture',
+  complex_lenses: 'Verres complexes + monture',
+  contact_lenses: 'Lentilles',
+  // Dental
+  dental_care: 'Soins dentaires',
+  dental_prosthetics: 'Prothèses dentaires',
+  orthodontics: 'Orthodontie',
+  implants: 'Implants dentaires',
+  // Hearing
+  hearing_aids: 'Appareils auditifs',
+} as const;
+
+export type NormalizedKey = keyof typeof NORMALIZED_KEYS;
+
+// === REIMBURSEMENT ===
 
 export type PercentageReimbursement = {
   type: 'percentage';
-  rate: number;
-  socialSecurityDeduction?: boolean;
-  loyaltyBonus?: {
-    after1Year?: number;
-    after2Years?: number;
-  };
+  value: number;
 };
 
 export type FixedReimbursement = {
   type: 'fixed';
-  amount: number;
-  unit: string;
-  perPeriod?: string;
-  limit?: {
-    count: number;
-    unit: string;
-  };
+  value: number;
+  unit: 'EUR' | 'EUR/day' | 'EUR/year';
 };
 
 export type RealCostsReimbursement = {
   type: 'real_costs';
-  ceiling?: number;
 };
 
 export type Reimbursement =
@@ -31,26 +68,18 @@ export type Reimbursement =
   | FixedReimbursement
   | RealCostsReimbursement;
 
-// === CATEGORIES ===
-
-export type Category =
-  | 'general_care'
-  | 'hospitalization'
-  | 'optical'
-  | 'dental'
-  | 'hearing_aids'
-  | 'prevention';
-
-// === MAIN MODELS ===
+// === GUARANTEE ===
 
 export interface Guarantee {
   category: Category;
-  name: string;
-  normalizedKey: string;
+  key: NormalizedKey;
+  label: string;
   reimbursement: Reimbursement;
-  conditions?: string[];
-  notes?: string[];
+  limit?: string;
+  details?: string;
 }
+
+// === PLAN ===
 
 export interface Plan {
   level: number;
@@ -58,13 +87,10 @@ export interface Plan {
   guarantees: Guarantee[];
 }
 
+// === INSURER ===
+
 export interface Insurer {
   name: string;
   brand: string;
   plans: Plan[];
-  metadata?: {
-    loyaltyBonus?: boolean;
-    modularity?: boolean;
-    modules?: string[];
-  };
 }

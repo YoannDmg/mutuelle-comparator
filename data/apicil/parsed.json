@@ -1,0 +1,880 @@
+{
+  "name": "API",
+  "brand": "Santé Équilibre",
+  "plans": [
+    {
+      "level": 1,
+      "name": "Equilibre 1",
+      "guarantees": [
+        {
+          "category": "general_care",
+          "key": "lab_tests",
+          "label": "Analyses et examens de biologie médicale",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 100
+          }
+        },
+        {
+          "category": "general_care",
+          "key": "general_practitioner",
+          "label": "Praticiens conventionnés signataires OPTAM/OPTAM-CO",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 100
+          }
+        },
+        {
+          "category": "general_care",
+          "key": "specialist",
+          "label": "Praticiens conventionnés non signataires OPTAM/OPTAM-CO",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 100
+          }
+        },
+        {
+          "category": "general_care",
+          "key": "medication",
+          "label": "Pharmacie remboursée à 65 %",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 100
+          }
+        },
+        {
+          "category": "hospitalization",
+          "key": "surgical_fees",
+          "label": "Praticiens conventionnés signataires OPTAM/OPTAM-CO",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 100
+          }
+        },
+        {
+          "category": "hospitalization",
+          "key": "daily_hospital_fee",
+          "label": "Forfait journalier hospitalier",
+          "reimbursement": {
+            "type": "real_costs"
+          }
+        },
+        {
+          "category": "hospitalization",
+          "key": "hospital_stay",
+          "label": "Frais de séjour en établissement conventionné",
+          "reimbursement": {
+            "type": "real_costs"
+          }
+        },
+        {
+          "category": "optical",
+          "key": "simple_lenses",
+          "label": "Forfait monture + verres à simple foyer",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 100
+          }
+        },
+        {
+          "category": "optical",
+          "key": "complex_lenses",
+          "label": "Forfait monture + verres complexes",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 100
+          }
+        },
+        {
+          "category": "dental",
+          "key": "dental_care",
+          "label": "Soins des paniers modéré et libre",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 100
+          }
+        },
+        {
+          "category": "dental",
+          "key": "dental_prosthetics",
+          "label": "Prothèses fixes,inlay-core sur dents visibles",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 100
+          }
+        },
+        {
+          "category": "dental",
+          "key": "orthodontics",
+          "label": "Orthodontie prise en charge par la SS",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 100
+          }
+        },
+        {
+          "category": "hearing_aids",
+          "key": "hearing_aids",
+          "label": "Appareil auditif",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 100
+          }
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "name": "Equilibre 2",
+      "guarantees": [
+        {
+          "category": "general_care",
+          "key": "lab_tests",
+          "label": "Analyses et examens de biologie médicale",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 100
+          }
+        },
+        {
+          "category": "general_care",
+          "key": "general_practitioner",
+          "label": "Praticiens conventionnés signataires OPTAM/OPTAM-CO",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 150
+          }
+        },
+        {
+          "category": "general_care",
+          "key": "specialist",
+          "label": "Praticiens conventionnés non signataires OPTAM/OPTAM-CO",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 130
+          }
+        },
+        {
+          "category": "general_care",
+          "key": "medication",
+          "label": "Pharmacie remboursée à 65 %",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 100
+          }
+        },
+        {
+          "category": "hospitalization",
+          "key": "surgical_fees",
+          "label": "Praticiens conventionnés signataires OPTAM/OPTAM-CO",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 150
+          }
+        },
+        {
+          "category": "hospitalization",
+          "key": "daily_hospital_fee",
+          "label": "Forfait journalier hospitalier",
+          "reimbursement": {
+            "type": "real_costs"
+          }
+        },
+        {
+          "category": "hospitalization",
+          "key": "hospital_stay",
+          "label": "Frais de séjour en établissement conventionné",
+          "reimbursement": {
+            "type": "real_costs"
+          }
+        },
+        {
+          "category": "hospitalization",
+          "key": "private_room",
+          "label": "Chambre particulière",
+          "reimbursement": {
+            "type": "fixed",
+            "value": 30,
+            "unit": "EUR/day"
+          },
+          "details": "hors hospitalisation ambulatoire"
+        },
+        {
+          "category": "optical",
+          "key": "simple_lenses",
+          "label": "Forfait monture + verres à simple foyer",
+          "reimbursement": {
+            "type": "fixed",
+            "value": 100,
+            "unit": "EUR"
+          },
+          "details": "dont 30€ monture max"
+        },
+        {
+          "category": "optical",
+          "key": "complex_lenses",
+          "label": "Forfait monture + verres complexes",
+          "reimbursement": {
+            "type": "fixed",
+            "value": 200,
+            "unit": "EUR"
+          },
+          "details": "dont 30€ monture max"
+        },
+        {
+          "category": "optical",
+          "key": "contact_lenses",
+          "label": "Lentilles prises en charge ou non par la SS",
+          "reimbursement": {
+            "type": "fixed",
+            "value": 125,
+            "unit": "EUR/year"
+          }
+        },
+        {
+          "category": "dental",
+          "key": "dental_care",
+          "label": "Soins des paniers modéré et libre",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 100
+          }
+        },
+        {
+          "category": "dental",
+          "key": "dental_prosthetics",
+          "label": "Prothèses fixes,inlay-core sur dents visibles",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 150
+          }
+        },
+        {
+          "category": "dental",
+          "key": "orthodontics",
+          "label": "Orthodontie prise en charge par la SS",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 150
+          }
+        },
+        {
+          "category": "dental",
+          "key": "implants",
+          "label": "Forfait Implantologie",
+          "reimbursement": {
+            "type": "fixed",
+            "value": 250,
+            "unit": "EUR"
+          },
+          "limit": "2 implants max"
+        },
+        {
+          "category": "hearing_aids",
+          "key": "hearing_aids",
+          "label": "Appareil auditif",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 100
+          }
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "name": "Equilibre 3",
+      "guarantees": [
+        {
+          "category": "general_care",
+          "key": "lab_tests",
+          "label": "Analyses et examens de biologie médicale",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 130
+          }
+        },
+        {
+          "category": "general_care",
+          "key": "general_practitioner",
+          "label": "Praticiens conventionnés signataires OPTAM/OPTAM-CO",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 200
+          }
+        },
+        {
+          "category": "general_care",
+          "key": "specialist",
+          "label": "Praticiens conventionnés non signataires OPTAM/OPTAM-CO",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 180
+          }
+        },
+        {
+          "category": "general_care",
+          "key": "medication",
+          "label": "Pharmacie remboursée à 65 %",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 100
+          }
+        },
+        {
+          "category": "hospitalization",
+          "key": "surgical_fees",
+          "label": "Praticiens conventionnés signataires OPTAM/OPTAM-CO",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 200
+          }
+        },
+        {
+          "category": "hospitalization",
+          "key": "daily_hospital_fee",
+          "label": "Forfait journalier hospitalier",
+          "reimbursement": {
+            "type": "real_costs"
+          }
+        },
+        {
+          "category": "hospitalization",
+          "key": "hospital_stay",
+          "label": "Frais de séjour en établissement conventionné",
+          "reimbursement": {
+            "type": "real_costs"
+          }
+        },
+        {
+          "category": "hospitalization",
+          "key": "private_room",
+          "label": "Chambre particulière",
+          "reimbursement": {
+            "type": "fixed",
+            "value": 50,
+            "unit": "EUR/day"
+          },
+          "details": "hors hospitalisation ambulatoire"
+        },
+        {
+          "category": "optical",
+          "key": "simple_lenses",
+          "label": "Forfait monture + verres à simple foyer",
+          "reimbursement": {
+            "type": "fixed",
+            "value": 200,
+            "unit": "EUR"
+          },
+          "details": "dont 80€ monture max"
+        },
+        {
+          "category": "optical",
+          "key": "complex_lenses",
+          "label": "Forfait monture + verres complexes",
+          "reimbursement": {
+            "type": "fixed",
+            "value": 300,
+            "unit": "EUR"
+          },
+          "details": "dont 80€ monture max"
+        },
+        {
+          "category": "optical",
+          "key": "contact_lenses",
+          "label": "Lentilles prises en charge ou non par la SS",
+          "reimbursement": {
+            "type": "fixed",
+            "value": 175,
+            "unit": "EUR/year"
+          }
+        },
+        {
+          "category": "dental",
+          "key": "dental_care",
+          "label": "Soins des paniers modéré et libre",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 120
+          }
+        },
+        {
+          "category": "dental",
+          "key": "dental_prosthetics",
+          "label": "Prothèses fixes,inlay-core sur dents visibles",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 200
+          }
+        },
+        {
+          "category": "dental",
+          "key": "orthodontics",
+          "label": "Orthodontie prise en charge par la SS",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 200
+          }
+        },
+        {
+          "category": "dental",
+          "key": "implants",
+          "label": "Forfait Implantologie",
+          "reimbursement": {
+            "type": "fixed",
+            "value": 500,
+            "unit": "EUR"
+          },
+          "limit": "2 implants max"
+        },
+        {
+          "category": "hearing_aids",
+          "key": "hearing_aids",
+          "label": "Appareil auditif",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 100
+          }
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "name": "Equilibre 4",
+      "guarantees": [
+        {
+          "category": "general_care",
+          "key": "lab_tests",
+          "label": "Analyses et examens de biologie médicale",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 150
+          }
+        },
+        {
+          "category": "general_care",
+          "key": "general_practitioner",
+          "label": "Praticiens conventionnés signataires OPTAM/OPTAM-CO",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 220
+          }
+        },
+        {
+          "category": "general_care",
+          "key": "specialist",
+          "label": "Praticiens conventionnés non signataires OPTAM/OPTAM-CO",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 200
+          }
+        },
+        {
+          "category": "general_care",
+          "key": "medication",
+          "label": "Pharmacie remboursée à 65 %",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 100
+          }
+        },
+        {
+          "category": "hospitalization",
+          "key": "surgical_fees",
+          "label": "Praticiens conventionnés signataires OPTAM/OPTAM-CO",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 250
+          }
+        },
+        {
+          "category": "hospitalization",
+          "key": "daily_hospital_fee",
+          "label": "Forfait journalier hospitalier",
+          "reimbursement": {
+            "type": "real_costs"
+          }
+        },
+        {
+          "category": "hospitalization",
+          "key": "hospital_stay",
+          "label": "Frais de séjour en établissement conventionné",
+          "reimbursement": {
+            "type": "real_costs"
+          }
+        },
+        {
+          "category": "hospitalization",
+          "key": "private_room",
+          "label": "Chambre particulière",
+          "reimbursement": {
+            "type": "fixed",
+            "value": 60,
+            "unit": "EUR/day"
+          },
+          "details": "hors hospitalisation ambulatoire"
+        },
+        {
+          "category": "optical",
+          "key": "simple_lenses",
+          "label": "Forfait monture + verres à simple foyer",
+          "reimbursement": {
+            "type": "fixed",
+            "value": 250,
+            "unit": "EUR"
+          },
+          "details": "dont 100€ monture max"
+        },
+        {
+          "category": "optical",
+          "key": "complex_lenses",
+          "label": "Forfait monture + verres complexes",
+          "reimbursement": {
+            "type": "fixed",
+            "value": 400,
+            "unit": "EUR"
+          },
+          "details": "dont 100€ monture max"
+        },
+        {
+          "category": "optical",
+          "key": "contact_lenses",
+          "label": "Lentilles prises en charge ou non par la SS",
+          "reimbursement": {
+            "type": "fixed",
+            "value": 185,
+            "unit": "EUR/year"
+          }
+        },
+        {
+          "category": "dental",
+          "key": "dental_care",
+          "label": "Soins des paniers modéré et libre",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 150
+          }
+        },
+        {
+          "category": "dental",
+          "key": "dental_prosthetics",
+          "label": "Prothèses fixes,inlay-core sur dents visibles",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 250
+          }
+        },
+        {
+          "category": "dental",
+          "key": "orthodontics",
+          "label": "Orthodontie prise en charge par la SS",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 300
+          }
+        },
+        {
+          "category": "dental",
+          "key": "implants",
+          "label": "Forfait Implantologie",
+          "reimbursement": {
+            "type": "fixed",
+            "value": 700,
+            "unit": "EUR"
+          },
+          "limit": "2 implants max"
+        },
+        {
+          "category": "hearing_aids",
+          "key": "hearing_aids",
+          "label": "Appareil auditif",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 100
+          }
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "name": "Equilibre 5",
+      "guarantees": [
+        {
+          "category": "general_care",
+          "key": "lab_tests",
+          "label": "Analyses et examens de biologie médicale",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 150
+          }
+        },
+        {
+          "category": "general_care",
+          "key": "general_practitioner",
+          "label": "Praticiens conventionnés signataires OPTAM/OPTAM-CO",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 250
+          }
+        },
+        {
+          "category": "general_care",
+          "key": "specialist",
+          "label": "Praticiens conventionnés non signataires OPTAM/OPTAM-CO",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 200
+          }
+        },
+        {
+          "category": "general_care",
+          "key": "medication",
+          "label": "Pharmacie remboursée à 65 %",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 100
+          }
+        },
+        {
+          "category": "hospitalization",
+          "key": "surgical_fees",
+          "label": "Praticiens conventionnés signataires OPTAM/OPTAM-CO",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 300
+          }
+        },
+        {
+          "category": "hospitalization",
+          "key": "daily_hospital_fee",
+          "label": "Forfait journalier hospitalier",
+          "reimbursement": {
+            "type": "real_costs"
+          }
+        },
+        {
+          "category": "hospitalization",
+          "key": "hospital_stay",
+          "label": "Frais de séjour en établissement conventionné",
+          "reimbursement": {
+            "type": "real_costs"
+          }
+        },
+        {
+          "category": "hospitalization",
+          "key": "private_room",
+          "label": "Chambre particulière",
+          "reimbursement": {
+            "type": "fixed",
+            "value": 80,
+            "unit": "EUR/day"
+          },
+          "details": "hors hospitalisation ambulatoire"
+        },
+        {
+          "category": "optical",
+          "key": "simple_lenses",
+          "label": "Forfait monture + verres à simple foyer",
+          "reimbursement": {
+            "type": "fixed",
+            "value": 300,
+            "unit": "EUR"
+          },
+          "details": "dont 100€ monture max"
+        },
+        {
+          "category": "optical",
+          "key": "complex_lenses",
+          "label": "Forfait monture + verres complexes",
+          "reimbursement": {
+            "type": "fixed",
+            "value": 500,
+            "unit": "EUR"
+          },
+          "details": "dont 100€ monture max"
+        },
+        {
+          "category": "optical",
+          "key": "contact_lenses",
+          "label": "Lentilles prises en charge ou non par la SS",
+          "reimbursement": {
+            "type": "fixed",
+            "value": 300,
+            "unit": "EUR/year"
+          }
+        },
+        {
+          "category": "dental",
+          "key": "dental_care",
+          "label": "Soins des paniers modéré et libre",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 180
+          }
+        },
+        {
+          "category": "dental",
+          "key": "dental_prosthetics",
+          "label": "Prothèses fixes,inlay-core sur dents visibles",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 350
+          }
+        },
+        {
+          "category": "dental",
+          "key": "orthodontics",
+          "label": "Orthodontie prise en charge par la SS",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 400
+          }
+        },
+        {
+          "category": "hearing_aids",
+          "key": "hearing_aids",
+          "label": "Appareil auditif",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 100
+          }
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "name": "Equilibre 6",
+      "guarantees": [
+        {
+          "category": "general_care",
+          "key": "lab_tests",
+          "label": "Analyses et examens de biologie médicale",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 150
+          }
+        },
+        {
+          "category": "general_care",
+          "key": "general_practitioner",
+          "label": "Praticiens conventionnés signataires OPTAM/OPTAM-CO",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 300
+          }
+        },
+        {
+          "category": "general_care",
+          "key": "specialist",
+          "label": "Praticiens conventionnés non signataires OPTAM/OPTAM-CO",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 200
+          }
+        },
+        {
+          "category": "general_care",
+          "key": "medication",
+          "label": "Pharmacie remboursée à 65 %",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 100
+          }
+        },
+        {
+          "category": "hospitalization",
+          "key": "surgical_fees",
+          "label": "Praticiens conventionnés signataires OPTAM/OPTAM-CO",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 400
+          }
+        },
+        {
+          "category": "hospitalization",
+          "key": "daily_hospital_fee",
+          "label": "Forfait journalier hospitalier",
+          "reimbursement": {
+            "type": "real_costs"
+          }
+        },
+        {
+          "category": "hospitalization",
+          "key": "hospital_stay",
+          "label": "Frais de séjour en établissement conventionné",
+          "reimbursement": {
+            "type": "real_costs"
+          }
+        },
+        {
+          "category": "hospitalization",
+          "key": "private_room",
+          "label": "Chambre particulière",
+          "reimbursement": {
+            "type": "fixed",
+            "value": 100,
+            "unit": "EUR/day"
+          },
+          "details": "hors hospitalisation ambulatoire"
+        },
+        {
+          "category": "optical",
+          "key": "simple_lenses",
+          "label": "Forfait monture + verres à simple foyer",
+          "reimbursement": {
+            "type": "fixed",
+            "value": 420,
+            "unit": "EUR"
+          },
+          "details": "dont 100€ monture max"
+        },
+        {
+          "category": "optical",
+          "key": "complex_lenses",
+          "label": "Forfait monture + verres complexes",
+          "reimbursement": {
+            "type": "fixed",
+            "value": 650,
+            "unit": "EUR"
+          },
+          "details": "dont 100€ monture max"
+        },
+        {
+          "category": "dental",
+          "key": "dental_care",
+          "label": "Soins des paniers modéré et libre",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 200
+          }
+        },
+        {
+          "category": "dental",
+          "key": "dental_prosthetics",
+          "label": "Prothèses fixes,inlay-core sur dents visibles",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 500
+          }
+        },
+        {
+          "category": "dental",
+          "key": "orthodontics",
+          "label": "Orthodontie prise en charge par la SS",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 500
+          }
+        },
+        {
+          "category": "hearing_aids",
+          "key": "hearing_aids",
+          "label": "Appareil auditif",
+          "reimbursement": {
+            "type": "percentage",
+            "value": 100
+          }
+        }
+      ]
+    }
+  ]
+}

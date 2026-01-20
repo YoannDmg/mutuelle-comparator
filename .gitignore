@@ -7,3 +7,14 @@ Thumbs.db
 .vscode/
 *.swp
 *.swo
+
+# Environment
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+docs/
