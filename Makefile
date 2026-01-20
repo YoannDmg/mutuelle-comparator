@@ -62,11 +62,9 @@ start:
 	@echo "│  Backend      http://localhost:3000                              │"
 	@echo "│  MongoDB      mongodb://localhost:27017                          │"
 	@echo "├──────────────────────────────────────────────────────────────────┤"
-	@echo "│  API Docs     http://localhost:3000/insurers                     │"
+	@echo "│  Logs: make logs                                                 │"
+	@echo "│  Stop: make down                                                 │"
 	@echo "└──────────────────────────────────────────────────────────────────┘"
-	@echo ""
-	@echo "Logs: make logs"
-	@echo "Stop: make down"
 	@echo ""
 
 db:

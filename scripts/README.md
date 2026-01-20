@@ -34,6 +34,15 @@ data/april/parsed.json
 | `python parse.py parse <insurer>` | Extraction + parsing Claude |
 | `python parse.py parse-all` | Parse tous les assureurs |
 
+## Données générées
+
+Les fichiers parsés sont dans [`data/`](../data/) :
+
+| Assureur | PDF source | JSON parsé |
+|----------|------------|------------|
+| APICIL | [source.pdf](../data/apicil/source.pdf) | [parsed.json](../data/apicil/parsed.json) |
+| APRIL | [source.pdf](../data/april/source.pdf) | [parsed.json](../data/april/parsed.json) |
+
 ## Ajouter un assureur
 
 1. Créer un dossier dans `data/` (ex: `data/april/`)
