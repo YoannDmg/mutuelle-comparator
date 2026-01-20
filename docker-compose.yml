@@ -1,5 +1,4 @@
 services:
-  # MongoDB database
   mongodb:
     image: mongo:7
     container_name: insurance-mongodb
@@ -16,7 +15,6 @@ services:
       timeout: 5s
       retries: 5
 
-  # NestJS backend
   backend:
     build:
       context: ./backend
@@ -32,11 +30,8 @@ services:
       mongodb:
         condition: service_healthy
     volumes:
-      - ./backend:/app
-      - /app/node_modules
       - ./data:/app/data:ro
 
-  # React frontend
   frontend:
     build:
       context: ./frontend
@@ -44,8 +39,6 @@ services:
     container_name: insurance-frontend
     ports:
       - "5173:80"
-    depends_on:
-      - backend
 
 volumes:
   mongodb_data:
